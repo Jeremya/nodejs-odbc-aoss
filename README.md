@@ -8,7 +8,7 @@ Simple Nodejs example that open a connection using [node-odbc](https://www.npmjs
 ### Prerequisites
 
 * NodeJS installed
-* Simba Spark ODBC installed (https://docs.datastax.com/en/dse/6.7/dse-dev/datastax_enterprise/spark/simbaOdbcDriver.html)
+* [Simba Spark ODBC installed](https://docs.datastax.com/en/dse/6.7/dse-dev/datastax_enterprise/spark/simbaOdbcDriver.html)
 * DSE running with AlwaysOn SQL enabled
 
 ### Running
