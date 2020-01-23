@@ -3,24 +3,27 @@
 ## Objectives
 Simple Nodejs example that open a connection using [node-odbc](https://www.npmjs.com/package/odbc) to a running [AlwaysOn SQL on DSE](https://docs.datastax.com/en/dse/6.7/dse-dev/datastax_enterprise/spark/alwaysOnSql.html).
 
+DataStax provides multiple ODBC/JDBC drivers to connect to Cassandra and DSE, please see [here](https://downloads.datastax.com/#odbc-jdbc-drivers) for more information.
+
 ## Setup and running
 
 ### Prerequisites
 
 * NodeJS installed
 * [Simba Spark ODBC installed](https://docs.datastax.com/en/dse/6.7/dse-dev/datastax_enterprise/spark/simbaOdbcDriver.html)
-* DSE running with AlwaysOn SQL enabled
+* DSE running with Analytics workload and AlwaysOn SQL enabled
 
 ### Running
 #### Building
-At the project root level
+At the project root level run
 
 ```npm install```
 
 This will create node_modules folder with all required dependencies.
 
 #### Configuration changes
-Change connection string at the top of app.js using your own values.
+Change connection string at the top of `app.js` using your own values.
+In this example, AlwaysOn SQL service is expected to be available on `localhost:10000` but you can change it.
 
 #### Run the app
 ```npm start```
